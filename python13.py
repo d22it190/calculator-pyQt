@@ -32,4 +32,20 @@ if __name__ == "__main__":
         self.gridLayout.addWidget(self.textEdit, 0, 0, 1, 4)
         self.pushButton_22 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_22.setObjectName("pushButton_22")
+
+
+
+        self.mw  = MainWindow
+        self.text=''
+        self.textEdit.setFontPointSize(24)
+        self.processed=False
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.pushButton_12.clicked.connect(self.show) 
+        self.pushButton.clicked.connect(self.show) 
+        self.pushButton_3.clicked.connect(self.show)
+        # ... (include code that connects button click events and defines functions)
+
+
        
